@@ -1,0 +1,286 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.button {
+    background-color: #99cc8c;
+    border-radius: 24px;
+    color: inherit;
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 24px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #64a055;
+}
+
+.section-title {
+    text-align: center;
+    margin: 36px 0;
+}
+
+body {
+  margin: 0;
+  background: #F4F6F6;
+  color: #1E2A2E;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+    background-color: #f0f0f0;
+    position: relative;
+
+}
+
+.header-logo img{
+    height:100px;
+    width: auto;
+}
+
+.header-inner {
+    align-items: center;
+    display:flex ;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 64px;
+}
+
+
+.nav-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  
+}
+
+.nav-list a {
+    color: inherit;
+    text-decoration: none;
+
+}
+
+.nav-list a:hover {
+    color: #64a055;
+}
+
+.nav-item {
+    margin: 24px;
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.menu-button span {
+    background-color: #1E2A2E;
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    width: 24px;
+}
+
+.main {
+    margin: 64px auto;
+    max-width: 1080px;
+    padding: 0 16px;
+}
+
+.first-view {
+    align-items: center;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    text-align: center;
+    padding: 32px 24px;
+}
+
+.name-view {
+    font-size: 48px;
+}
+
+.first-view-job {
+    color: #64a055;
+
+}
+
+/*About*/
+
+
+
+.About-card {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    gap: 32px;
+    padding: 32px;
+}
+
+
+.About-img {
+    background-color: aqua;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    height: 120px;
+    width: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.work-list {
+    display: grid;
+    gap:16px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.work-img {
+    display: block;
+    width: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+}
+
+.tag-list {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tag-item {
+    background-color: #c4ffb6;
+    border-radius: 24px;
+    padding: 0 16px;
+
+}
+
+
+.contact-card {
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    margin: 0 auto;
+    max-width: 480px;
+    padding: 32px 24px;
+}
+
+
+
+/*フッター*/
+.footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 12px 24px;
+}
+
+
+/*メディアクリー*/
+
+/* タブレット（767px以下） */
+@media (max-width: 767px) {
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav.is-open {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f0f0f0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 0;
+    }
+
+    .nav-list a {
+        display: block;
+        padding: 12px 16px;
+    }
+
+    .work-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* スマホ（479px以下） */
+@media (max-width: 479px) {
+
+
+    .About-card {
+        flex-direction: column;
+    }
+
+    .About-img {
+        align-self: center;
+    }
+
+    .first-view {
+        min-height: 20vh;
+    }
+
+    .name-view {
+        font-size: 28px;
+    }
+
+    .header-inner {
+        padding: 0 16px;
+    }
+
+    .work-list {
+        grid-template-columns: 1fr;
+    }
+}
