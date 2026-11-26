@@ -97,6 +97,7 @@ main {
     border: #7a3030;
     border-radius: 16px;
     color: #fff;
+    display: inline-block;  
     margin: 24px 0;
     padding: 24px;
 }
